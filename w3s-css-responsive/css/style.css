@@ -34,7 +34,7 @@ body {
 */
 
 /* 12개의 열을 가진 반응형 그리드 뷰 */
-.col-1 {width: 8.33%;}
+/* .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -46,6 +46,7 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+ */
 
 /* 이 모든 열은 왼쪽으로 떠 있어야하며 15px의 여백을 가지고 있어야 한다고 함 */
 [class*="col-"] {
@@ -53,13 +54,36 @@ body {
     padding: 15px;
     border: 1px solid red; /* test*/
 }
-
+/* 
 @media only screen and (max-width: 768px) {
-  /* 브라우저 창이 768px보다 작으면 */  
-  /* 즉 모바일 사이즈 */
+  // 브라우저 창이 768px보다 작으면  
+  // 즉 모바일 사이즈 
     [class*="col-"] {
         width: 100%;
     }
+}
+ */
+
+/* 기본 사이즈 모바일 사이즈 */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* 브라우저 창이 768px보다 크다면 */
+    /* 즉 데스크탑 사이즈 */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
 
 /* 한 행 안의 열은 모두 왼쪽으로 떠 있기 때문에 열이 없는 것처럼 다른 요소가 배치되버림
