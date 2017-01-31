@@ -1,3 +1,16 @@
+body {
+  background-color: #fff;
+}
+/* 미디어 쿼리는 css3에서 도입된 기술임
+   @media 는 특정 조건이 true 인 경우에만 css 속성의 블록을 포함하는 규칙임 */
+@media only screen and (max-width: 500px) {
+  /* 브라우저 창이 500px보다 작으면 */
+  body {  /* 바디의 배경색이 검은색으로 변경 됨 */
+    background-color: #000;
+    color: #fff;
+  }
+}
+
 * {
     box-sizing: border-box;
 }
