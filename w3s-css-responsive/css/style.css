@@ -138,3 +138,8 @@ body {
     clear: both;
     display: table;
 }
+
+img { /* 이미지가 위 아래로 반응하며 학장함 */
+    width: 100%;
+    height: auto;
+}
