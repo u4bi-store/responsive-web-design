@@ -54,6 +54,14 @@ body {
     border: 1px solid red; /* test*/
 }
 
+@media only screen and (max-width: 768px) {
+  /* 브라우저 창이 768px보다 작으면 */  
+  /* 즉 모바일 사이즈 */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
 /* 한 행 안의 열은 모두 왼쪽으로 떠 있기 때문에 열이 없는 것처럼 다른 요소가 배치되버림
    이를 방지하기 위해 흐름을 지우는 스타일 속성 추가해야함*/
 .row::after {
