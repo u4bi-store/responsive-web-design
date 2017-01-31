@@ -144,3 +144,20 @@ img { /* 이미지가 위 아래로 반응하며 학장함 */
     max-width: 100%; /* max-width는 원래 크기 이상으론 확장되지 않음*/
     height: auto;
 }
+
+.back{
+  background-image: url(http://unsplash.it/1200/700?image=66);
+  background-repeat: no-repeat; /* 이미지에 대한 반복 지정 */
+  /* repeat 기본값 / repeat-x 가로만 반복 / repeat-y 세로만 반복 / no-repeat 반복안함*/
+  background-size: contain; /* 배경 이미지 크기를 조절함 cover하면 div를 다 꽉채움 종횡비 유지되어 일부분 짤림*/
+  
+  /* x, y로 값을 지정할 수 있으나 cover과 contain이 있음 */
+  /* contain 엘리먼트 안쪽에 대한 가장 큰 비율로 이미지를 조절함 */
+  
+  /* cover 배경 이미지가 엘리먼트보다 크다라는 조건하에 가능함
+     왜냐 배경 이미지를 엘리먼트에 알맞게 작게 조절해줌 그로 인해 배경 이미지가 짤릴 수 있음*/
+  
+  /* contain과 cover 모두 종횡비 유지해줌 */
+  width: 100%;
+  height: 400px;
+}
