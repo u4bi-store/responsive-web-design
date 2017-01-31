@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+  width: 25%;
+  border: 1px solid blue;
+}
+.main {
+  width: 75%;
+  border: 1px solid red;
+}
+
+.menu, .main{
+  height:100px;
+  float: left;
+}
+
+/* 두개의 열만 있다면 이러한 식으로 사용을 해도 되겠지만
+  웹 페이지를 보다 잘 제어하기 위해서는 12개의 열이 있는 반응형 그리드 뷰를 사용해야한다고 함.
+*/
+
+/* 12개의 열을 가진 반응형 그리드 뷰 */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* 이 모든 열은 왼쪽으로 떠 있어야하며 15px의 여백을 가지고 있어야 한다고 함 */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red; /* test*/
+}
+
+/* 한 행 안의 열은 모두 왼쪽으로 떠 있기 때문에 열이 없는 것처럼 다른 요소가 배치되버림
+   이를 방지하기 위해 흐름을 지우는 스타일 속성 추가해야함*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
