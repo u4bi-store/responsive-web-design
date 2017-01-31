@@ -124,6 +124,13 @@ body {
     .col-12 {width: 100%;}
 }
 
+@media only screen and (orientation: landscape) {
+  /* 랜드스코프 즉 브라우저 방향이 가로모드 일 경우*/
+    body { /* 바디의 배경색이 빨간색으로 변경 됨 */
+        background-color: red;
+    }
+}
+
 /* 한 행 안의 열은 모두 왼쪽으로 떠 있기 때문에 열이 없는 것처럼 다른 요소가 배치되버림
    이를 방지하기 위해 흐름을 지우는 스타일 속성 추가해야함*/
 .row::after {
