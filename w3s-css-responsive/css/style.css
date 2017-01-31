@@ -140,6 +140,7 @@ body {
 }
 
 img { /* 이미지가 위 아래로 반응하며 학장함 */
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%; /* max-width는 원래 크기 이상으론 확장되지 않음*/
     height: auto;
 }
