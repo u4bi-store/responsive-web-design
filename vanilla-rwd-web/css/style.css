@@ -27,6 +27,19 @@
   height: 300px;
 }
 
+.list li {
+  padding: 8px;
+  margin-bottom: 3px;
+  background-color: #FFCC00;
+  color: #fff;
+}
+.list li span:before{
+  content: "제 ";
+}
+.list li span:after{
+  content: "장 : ";
+}
+
 [class*="col-"] { /* 미디어 쿼리 조건에 없을 때 100프로*/
   width: 100%;
 }
