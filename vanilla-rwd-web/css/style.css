@@ -75,6 +75,17 @@ li:hover{
   cursor:pointer;
 }
 
+.item:hover{
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite; /* 무한 반복 */
+  animation-timing-function: linear; /* 동일한 회전속도 가짐 */
+  /* etc.. -webkit- -moz- -ms- 각 브라우저 호한 양식 */
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
 
 [class*="col-"] { /* 미디어 쿼리 조건에 없을 때 100프로*/
   width: 100%;
