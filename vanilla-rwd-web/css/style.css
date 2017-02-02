@@ -65,6 +65,17 @@ li:hover{
   font-weight:bold;
 }
 
+.item{
+  position:fixed;
+  bottom: 5%;
+  left:83%;
+}
+.item img{
+  width:50px;
+  cursor:pointer;
+}
+
+
 [class*="col-"] { /* 미디어 쿼리 조건에 없을 때 100프로*/
   width: 100%;
 }
@@ -84,6 +95,9 @@ li:hover{
   .col-m-12 {width: 100%;}
   .grade p {
     font-size: 1rem;
+  }
+  .item{
+    left:90%;
   }
 }
 
@@ -105,5 +119,8 @@ li:hover{
   }
   .grade p {
     font-size: 2rem;
+  }
+  .item{
+    left:93%;
   }
 }
