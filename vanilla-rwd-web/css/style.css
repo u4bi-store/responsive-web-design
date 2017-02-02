@@ -13,7 +13,7 @@ li {
   background-color: #FFCC00;
 }
 li:hover{
-	background-color: #0099cc;
+  background-color: #0099cc;
 }
 
 .title{
@@ -40,6 +40,10 @@ li:hover{
   content: "장 : ";
 }
 
+.grade {
+  text-align: center;
+}
+
 [class*="col-"] { /* 미디어 쿼리 조건에 없을 때 100프로*/
   width: 100%;
 }
@@ -57,6 +61,9 @@ li:hover{
   .col-m-10 {width: 83.33%;}
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
+  .grade p {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) { /* 최소 768px일 때 데스크탑 사이즈*/
@@ -72,4 +79,10 @@ li:hover{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .grade h2 {
+    text-align: left;
+  }
+  .grade p {
+    font-size: 2rem;
+  }
 }
