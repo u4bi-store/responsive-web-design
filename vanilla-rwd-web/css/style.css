@@ -1,25 +1,28 @@
 * {
   box-sizing: border-box;
+  color:#fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 8px;
+  background-color: #FFCC00;
+}
+li:hover{
+	background-color: #0099cc;
 }
 
 .title{
   background: #FFCC00;
   height: 200px;  
-  color:#fff;
 }
 
 .menu li {
-  padding: 8px;
   margin-bottom: 7px;
-  background-color: #FFCC00;
-}
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.menu li:hover{
-	background-color: #0099cc;
 }
 
 .pic img {
@@ -28,10 +31,7 @@
 }
 
 .list li {
-  padding: 8px;
   margin-bottom: 3px;
-  background-color: #FFCC00;
-  color: #fff;
 }
 .list li span:before{
   content: "제 ";
