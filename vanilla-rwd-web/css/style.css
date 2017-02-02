@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+.title{
+  background: #FFCC00;
+  height: 200px;  
+  color:#fff;
+}
+
+
 [class*="col-"] { /* 미디어 쿼리 조건에 없을 때 100프로*/
   width: 100%;
 }
