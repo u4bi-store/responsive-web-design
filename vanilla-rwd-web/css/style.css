@@ -8,6 +8,19 @@
   color:#fff;
 }
 
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #FFCC00;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li:hover{
+	background-color: #0099cc;
+}
 
 [class*="col-"] { /* 미디어 쿼리 조건에 없을 때 100프로*/
   width: 100%;
