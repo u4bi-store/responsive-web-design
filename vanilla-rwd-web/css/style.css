@@ -18,10 +18,10 @@
   .col-m-9 {width: 75%;}
   .col-m-10 {width: 83.33%;}
   .col-m-11 {width: 91.66%;}
-	.col-m-12 {width: 100%;}
+  .col-m-12 {width: 100%;}
 }
 
-@media only screen and (min-width: 768px) { /* 최소 7680px일 때 데스크탑 사이즈*/
+@media only screen and (min-width: 768px) { /* 최소 768px일 때 데스크탑 사이즈*/
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
