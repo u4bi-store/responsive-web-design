@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* color:#fff; */
   font-family:'NanumGothic';
 }
 
@@ -19,7 +18,8 @@ li:hover{
 
 .title{
   background: #FFCC00;
-  height: 200px;  
+  height: 200px;
+  color:#fff;
 }
 
 .menu li {
@@ -38,6 +38,7 @@ li:hover{
 
 .list li {
   margin-bottom: 3px;
+  color:#fff;
 }
 .list li span:before{
   content: "제 ";
@@ -55,6 +56,7 @@ li:hover{
   border-radius: 10px;
   padding: 8px;
   line-height:150%;
+  color:#fff;
 }
 .review p:hover {
 	background-color: #0099cc;
@@ -89,6 +91,7 @@ li:hover{
 
 [class*="col-"] { /* 미디어 쿼리 조건에 없을 때 100프로*/
   width: 100%;
+  float:left;
 }
 
 @media only screen and (min-width: 560px) { /* 최소 560px일 때 태블릿 사이즈*/
