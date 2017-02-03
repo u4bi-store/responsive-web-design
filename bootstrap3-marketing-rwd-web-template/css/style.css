@@ -1,0 +1,101 @@
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+}
+button{
+  outline:0;
+}
+.border{
+  padding: 80px 120px;
+  height: 400px;
+}
+
+.bg-1 {
+  background: #0B4594;
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 0;
+  transition: .2s;
+  border:0;
+}
+
+.btn.blue1{
+  background-color: #f1f1f1;
+  color: #0B4594;  
+}
+
+.btn.blue2{
+  background-color: #0B4594;
+  color: #f1f1f1;
+}
+
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+.modal-header, h4, .close {
+  background-color: #0B4594;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
+.nav-tabs li a {
+  color: #777;
+  background:red;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: #0B4594;
+  border: 0;
+  font-size: 1.5rem !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+.navbar li a, .navbar .navbar-brand { 
+  color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.navbar-toggle {
+  background: #fff;
+}
+.open .dropdown-toggle {
+  color: #fff;
+  background-color: #0B4594 !important;
+}
+.dropdown-menu li a {
+  color: #000 !important;
+}
+.dropdown-menu li a:hover {
+  background-color: #0B4594 !important;
+}
+footer {
+  background-color: #0B4594;
+  color: #f5f5f5;
+  padding:10px;
+}
+footer a {
+  color: #f5f5f5;
+}
+footer a:hover {
+  color: #777;
+  text-decoration: none;
+}
